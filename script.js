@@ -1,26 +1,9 @@
-/* =========================================================
-   NEURA LABS — animation & interaction script
-   Sections:
-   1. Loader
-   2. Navbar (scroll state + mobile toggle + active link)
-   3. Custom cursor
-   4. Hero canvas grid background
-   5. Hero load-in sequence (GSAP, plays once)
-   6. Scroll-triggered reveals (GSAP ScrollTrigger)
-   7. 3D tilt effect for cards (feature / equipment / brochure)
-   8. Team card tap-to-open on touch devices
-   ========================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   gsap.registerPlugin(ScrollTrigger);
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------------------------------------------------------
-     1. LOADER
-     Fades the brand mark in, holds briefly, then fades the
-     whole loader out so the hero animation can take over.
-     --------------------------------------------------------- */
   const loader = document.getElementById('loader');
   const loaderText = document.querySelector('.loader-text');
 
@@ -37,9 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (prefersReducedMotion) playHeroIntro();
 
-  /* ---------------------------------------------------------
-     2. NAVBAR — background on scroll, mobile drawer, active link
-     --------------------------------------------------------- */
   const nav = document.getElementById('mainNav');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
@@ -54,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
   });
 
-  // close mobile drawer when a link is tapped
   navLinks.querySelectorAll('.nav-link-item').forEach(link => {
     link.addEventListener('click', () => {
       navToggle.classList.remove('open');
@@ -62,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // highlight the nav link matching the section in view
   const sections = document.querySelectorAll('section[id], header[id]');
   const navItems = document.querySelectorAll('.nav-link-item');
   window.addEventListener('scroll', () => {
@@ -76,9 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------------------------------------------------------
-     3. CUSTOM CURSOR — follows pointer, grows on hoverables
-     --------------------------------------------------------- */
   const dot = document.getElementById('cursorDot');
   const ring = document.getElementById('cursorRing');
   const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
@@ -102,10 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------------------------------------------------------
-     4. HERO CANVAS GRID — a slowly drifting dotted grid,
-     purely decorative, sits behind the hero glow blobs.
-     --------------------------------------------------------- */
   const canvas = document.getElementById('gridCanvas');
   const ctx = canvas.getContext('2d');
   let w, h, t = 0;
@@ -138,12 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   drawGrid();
 
-  /* ---------------------------------------------------------
-     5. HERO INTRO SEQUENCE — plays once, right after loader.
-     One orchestrated moment: eyebrow fades in, headline lines
-     rise up (masked by overflow:hidden on .line), then the
-     description/buttons and the brochure card follow.
-     --------------------------------------------------------- */
   function playHeroIntro() {
     if (prefersReducedMotion) {
       gsap.set('[data-anim]', { opacity: 1, y: 0 });
@@ -155,12 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('[data-anim="hero-fade"]', { opacity: 0, y: 24, duration: 0.6, stagger: 0.15 }, '-=0.35');
   }
 
-  /* ---------------------------------------------------------
-     6. SCROLL-TRIGGERED REVEALS
-     Section headings fade up once; cards within each grid
-     stagger in together so the grid reads as one movement,
-     not many separate ones.
-     --------------------------------------------------------- */
   gsap.utils.toArray('.section-head').forEach(head => {
     gsap.from(head, {
       opacity: 0, y: 40, duration: 0.8, ease: 'power3.out',
@@ -194,10 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: { trigger: '.site-footer', start: 'top 90%' }
   });
 
-  /* ---------------------------------------------------------
-     7. 3D TILT — mouse-driven tilt on feature/equipment cards
-     and the hero brochure card. Skipped entirely on touch.
-     --------------------------------------------------------- */
   if (!isTouch && !prefersReducedMotion) {
     const tiltEls = document.querySelectorAll('[data-tilt]');
     tiltEls.forEach(el => {
@@ -227,10 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ---------------------------------------------------------
-     8. TEAM CARDS ON TOUCH — tap toggles the reveal panel
-     since there's no hover state on phones/tablets.
-     --------------------------------------------------------- */
   if (isTouch) {
     document.querySelectorAll('.team-card').forEach(card => {
       card.addEventListener('click', () => {
