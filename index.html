@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iSMART LAB — Inauguration</title>
+<meta name="description" content="Innovations for Sustainable Mobility & Advanced Research in Transportation Laboratory">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-text">
+    <span class="brand-i">i</span><span class="loader-gradient">SMART LAB</span>
+  </div>
+</div>
+<noscript><style>.loader{ display:none !important; } [data-anim], [data-reveal]{ opacity:1 !important; transform:none !important; }</style></noscript>
+<nav class="navbar navbar-expand-lg fixed-top custom-nav" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero"><span class="brand-i">i</span>SMART <span class="nav-lab">LAB</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link-item active">Home</a>
+      <a href="#features" class="nav-link-item">Features</a>
+      <a href="#equipment" class="nav-link-item">Equipment</a>
+      <a href="#team" class="nav-link-item">Team</a>
+      <!-- <a href="#contact" class="nav-link-item nav-cta">Visit Us</a> -->
+    </div>
+  </div>
+</nav>
+
+<header class="hero-brochure-section" id="hero">
+  <div class="brochure-container">
+    <img src="assets/hero_brouchure_wide.jpeg" alt="iSMART LAB Brochure" class="brochure-img">
+  </div>
+  
+  <!-- <div class="brochure-actions">
+    <a href="#features" class="btn-ghost">Explore Facilities</a>
+  </div>
+
+  <a href="#features" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a> -->
+</header>
+
+
+
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Research Areas</h2>
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-brain feature-icon'></i>
+          <h3 class="feature-title">Artificial Intelligence</h3>
+          <p class="feature-desc">AI-driven algorithms for dynamic traffic monitoring, automated signal control, and real-time transit optimization.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-line-chart feature-icon'></i>
+          <h3 class="feature-title">Data Driven</h3>
+          <p class="feature-desc">Leveraging spatial telemetry and large-scale origin-destination data to model complex urban transportation systems.</p>
+        </div>
+      </div>
+
+     <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-git-repo-forked feature-icon'></i>
+          <h3 class="feature-title">Data Science &amp; Machine Learning</h3>
+          <p class="feature-desc">Predictive analytics for pavement performance, flow forecasting, and automated civil infrastructure health monitoring.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-car feature-icon'></i>
+          <h3 class="feature-title">Electric Vehicles</h3>
+          <p class="feature-desc">EV integration studies, fleet charging demand analysis, and smart grid coordination for sustainable transit.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-chip feature-icon'></i>
+          <h3 class="feature-title">Innovative Research</h3>
+          <p class="feature-desc">Hardware-in-the-loop testing and experimental prototyping applied to modern transportation infrastructure.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-group feature-icon'></i>
+          <h3 class="feature-title">Intellectual Collaboration</h3>
+          <p class="feature-desc">Fostering interdisciplinary partnerships between civil academia, industry leaders, and national research bodies.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-sun feature-icon'></i>
+          <h3 class="feature-title">Renewable Energy</h3>
+          <p class="feature-desc">Integrating solar power into highway microgrids and evaluating sustainable energy adoption in public transport.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <i class='bx bx-bulb feature-icon'></i>
+          <h3 class="feature-title">Smart Solutions</h3>
+          <p class="feature-desc">Deploying intelligent transportation systems (ITS) to minimize congestion and lower urban mobility footprint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="equipment" id="equipment">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title"> Lab Equipments </h2>
+
+    </div>
+
+    <div class="equipment-grid">
+      
+      <div class="equip-card">
+        <img src="assets/cone-eqipment-1.jpeg" alt="Traffic & Safety Cones" class="equip-img">
+        <span class="equip-index">01</span>
+        <div class="equip-overlay">
+          <h4>Traffic Safety Cone</h4>
+          <p>Heavy-duty reflective channelizing cones for highway safety field trials and lane-closure simulations.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/shoe-equip-2.jpeg" alt="NVIDIA DGX Node" class="equip-img">
+        <span class="equip-index">02</span>
+        <div class="equip-overlay">
+          <h4>Safety Gumboots</h4>
+          <p>Used to protect the feet from water, mud, chemicals, and other workplace hazards.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/glas-equip-3.jpeg" alt="HIL EV Test Bench" class="equip-img">
+        <span class="equip-index">03</span>
+        <div class="equip-overlay">
+          <h4>Remidio InstaRef R20 Portable Autofractometer</h4>
+          <p>Used to measure refractive error of the eye, including spherical and cylinderical errors, for vision assessment and screening.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/stick-equip-4.jpeg" alt="Traffic Vision Array" class="equip-img">
+        <span class="equip-index">04</span>
+        <div class="equip-overlay">
+          <h4>Alcohol Detector/Breath Alcohol Analyzer</h4>
+          <p>Used to detect and measure the presence of alcohol in a person's breath, particularly for checking alcohol consumption before driving or operating vehicles.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/helmet-equip-5.jpeg" alt="Solid-State LIDAR" class="equip-img">
+        <span class="equip-index">05</span>
+        <div class="equip-overlay">
+          <h4>Safety Helmet / Hard Hat</h4>
+          <p>Used to protect the head from impact and falling-object hazards at construction and field sites.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/v-box-equip-6.jpeg" alt="Embedded Telemetry Unit" class="equip-img">
+        <span class="equip-index">06</span>
+        <div class="equip-overlay">
+          <h4>VBOX Racelogic GNSS Data Logger</h4>
+          <p>Used for accurate measurement of vehicle speed, distance, position, acceleration, and vehicle-performance parameters during road and transportation testing.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/suits-equip-7.jpeg" alt="Pavement Testing Rig" class="equip-img">
+        <span class="equip-index">07</span>
+        <div class="equip-overlay">
+          <h4>High-Visibility Reflective Safety Vest</h4>
+          <p>Used to increase the visibility and safety of workers, particularly during road, traffic, and field operations.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/big-shoes-equip-8.jpeg" alt="Smart Signal Controller" class="equip-img">
+        <span class="equip-index">08</span>
+        <div class="equip-overlay">
+          <h4>Industrial Safety Shoes</h4>
+          <p>Used to protect the feet from impact, compression, puncture, and other workplace hazards.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/chain-equip-9.jpeg" alt="Portable Weather Station" class="equip-img">
+        <span class="equip-index">09</span>
+        <div class="equip-overlay">
+          <h4>Plastic Safety Chain</h4>
+          <p> Used for barricading and demarcating restricted areas, work zones, and hazardous locations.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/white-stick.jpeg" alt="GPS Differential Base" class="equip-img">
+        <span class="equip-index">10</span>
+        <div class="equip-overlay">
+          <h4>LED Traffic Control Baton</h4>
+          <p>Used for traffic management, vehicle guidance, and signalling, particularly during night-time and low-visibility conditions.</p>
+        </div>
+      </div>
+
+      <div class="equip-card">
+        <img src="assets/model-equip-10.jpeg" alt="GPS Differential Base" class="equip-img">
+        <span class="equip-index">11</span>
+        <div class="equip-overlay">
+          <h4>Project Model</h4>
+          <p>Perform micro-simulation testing, calibrate traffic volume counts, and compare queue waiting times against baseline static configurations.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Meet the Team</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/team-dr-sandeep.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Dr. Sandeep Singh</h4>
+            <!-- <span>Faculty Incharge, <span class="brand-i">i</span>SMART LAB</span> -->
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Dr. Sandeep Singh</h4>
+          <p>Assistant Professor</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+          <!-- <div class="team-socials">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bx-envelope'></i></a>
+            <a href="#"><i class='bx bx-globe'></i></a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/scholar-1.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Mr. Thejoram C</h4>
+            </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Mr. Thejoram</h4>
+          <p>PhD. Research Scholar, NITPY</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/scholar-3.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Ms. Baranika S</h4>
+            </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Ms. Baranika S</h4>
+          <p>B.Tech - 2025 Batch</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/scholar-2.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Mr. Ranjith Kumar SS</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Mr. Ranjith Kumar SS</h4>
+          <p>B.Tech - 2025 Batch</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-1.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Manavaditya singh</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Manavaditya Singh</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-2.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Ashutosh Kumar</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Ashutosh Kumar</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-5.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Sanket Purwar</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Sanket Purwar</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-8.jpeg')"></div>
+          <div class="team-basic">
+            <h4>K.Gireesh Sanghee</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>K.Gireesh Sanghee</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-6.jpeg')"></div>
+          <div class="team-basic">
+            <h4>M.Srija</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>M.Srija</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-7.jpeg')"></div>
+          <div class="team-basic">
+            <h4>G.Shyshalya</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>G.Shyshalya</h4>
+          <p>B.Tech - 4th year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-4.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Kaviyarasu.S</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Kaviyarasu.s</h4>
+          <p>B.Tech - 3rd year</p>
+          <p>Department of Civil Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/student-3.jpeg')"></div>
+          <div class="team-basic">
+            <h4>Alwin Benedict.A</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Alwin Benedict.A</h4>
+          <p>B.Tech - 3rd year</p>
+          <p>Department of Computer Science and Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-face">
+          <div class="team-photo" style="background-image:url('assets/Aaron_photo.jpg')"></div>
+          <div class="team-basic">
+            <h4>Aaron.D</h4>
+          </div>
+        </div>
+        <div class="team-card-reveal">
+          <h4>Aaron.D</h4>
+          <p>B.Tech - 3rd year</p>
+          <p>Department of Electrical and Electronics Engineering</p>
+          <p>National Institue of Technology Puducherry - NITPY</p>
+          <p>Karaikal 609 609</p>
+        </div>
+      </div>
+
+</section>
+
+<footer class="site-footer" id="contact">
+
+    <div class="visitor-counter">
+        <i class='bx bx-user'></i>
+        <span>Total Visits: <strong id="visitCount">Loading...</strong></span>
+    </div>
+
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3><span class="brand-i">i</span>SMART<span>LAB</span></h3>
+        <p>Department of Civil Engineering<br>NIT Puducherry, Karaikal 609609</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Site</h5>
+          <a href="#hero">Home</a>
+          <a href="#features">Features</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#team">Team</a>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <a href="mailto:sandeep.singh@nitpy.ac.in">sandeep.singh@nitpy.ac.in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span class="brand-i">i</span>SMART LAB.</p>
+      <p class="brand-i">Engineered by R1</p>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
